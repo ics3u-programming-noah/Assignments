@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace FallingObjectsNoah
 {
-    static class Program
+    static class FallingObjects
     {
         /// <summary>
         /// The main entry point for the application.
