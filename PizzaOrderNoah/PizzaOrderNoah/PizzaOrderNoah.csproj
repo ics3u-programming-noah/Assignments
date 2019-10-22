@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F6BD1C3-0AFB-4E2F-B5E5-C670EA5D6987}</ProjectGuid>
+    <ProjectGuid>{05E3BFCB-34CE-4C7F-A300-E9FF75F2030A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PizzaOrderNoah</RootNamespace>
     <AssemblyName>PizzaOrderNoah</AssemblyName>
@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="PizzaOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="PizzaOrderForm.Designer.cs">
+      <DependentUpon>PizzaOrderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="PizzaOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PizzaOrderForm.resx">
+      <DependentUpon>PizzaOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
