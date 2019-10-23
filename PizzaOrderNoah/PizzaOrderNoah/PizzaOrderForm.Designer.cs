@@ -40,16 +40,19 @@
             this.lblSubtotal = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblTaxAnswer = new System.Windows.Forms.Label();
+            this.lblOrderTax = new System.Windows.Forms.Label();
+            this.nudOrderTax = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.nudPizzaSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudToppings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDrinks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOrderTax)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPizzaSize
             // 
             this.lblPizzaSize.AutoSize = true;
-            this.lblPizzaSize.Location = new System.Drawing.Point(13, 65);
+            this.lblPizzaSize.Location = new System.Drawing.Point(12, 18);
             this.lblPizzaSize.Name = "lblPizzaSize";
             this.lblPizzaSize.Size = new System.Drawing.Size(382, 13);
             this.lblPizzaSize.TabIndex = 0;
@@ -58,7 +61,7 @@
             // lblToppings
             // 
             this.lblToppings.AutoSize = true;
-            this.lblToppings.Location = new System.Drawing.Point(13, 166);
+            this.lblToppings.Location = new System.Drawing.Point(13, 109);
             this.lblToppings.Name = "lblToppings";
             this.lblToppings.Size = new System.Drawing.Size(218, 13);
             this.lblToppings.TabIndex = 1;
@@ -67,7 +70,7 @@
             // lblDrinks
             // 
             this.lblDrinks.AutoSize = true;
-            this.lblDrinks.Location = new System.Drawing.Point(13, 262);
+            this.lblDrinks.Location = new System.Drawing.Point(19, 193);
             this.lblDrinks.Name = "lblDrinks";
             this.lblDrinks.Size = new System.Drawing.Size(192, 13);
             this.lblDrinks.TabIndex = 2;
@@ -84,21 +87,21 @@
             // 
             // nudPizzaSize
             // 
-            this.nudPizzaSize.Location = new System.Drawing.Point(275, 98);
+            this.nudPizzaSize.Location = new System.Drawing.Point(275, 50);
             this.nudPizzaSize.Name = "nudPizzaSize";
             this.nudPizzaSize.Size = new System.Drawing.Size(120, 20);
             this.nudPizzaSize.TabIndex = 4;
             // 
             // nudToppings
             // 
-            this.nudToppings.Location = new System.Drawing.Point(275, 197);
+            this.nudToppings.Location = new System.Drawing.Point(275, 141);
             this.nudToppings.Name = "nudToppings";
             this.nudToppings.Size = new System.Drawing.Size(120, 20);
             this.nudToppings.TabIndex = 5;
             // 
             // nudDrinks
             // 
-            this.nudDrinks.Location = new System.Drawing.Point(275, 300);
+            this.nudDrinks.Location = new System.Drawing.Point(274, 221);
             this.nudDrinks.Name = "nudDrinks";
             this.nudDrinks.Size = new System.Drawing.Size(120, 20);
             this.nudDrinks.TabIndex = 6;
@@ -147,11 +150,29 @@
             this.lblTaxAnswer.TabIndex = 11;
             this.lblTaxAnswer.Text = "label3";
             // 
+            // lblOrderTax
+            // 
+            this.lblOrderTax.AutoSize = true;
+            this.lblOrderTax.Location = new System.Drawing.Point(13, 274);
+            this.lblOrderTax.Name = "lblOrderTax";
+            this.lblOrderTax.Size = new System.Drawing.Size(196, 13);
+            this.lblOrderTax.TabIndex = 12;
+            this.lblOrderTax.Text = "Select your tax rate! (1 = HST, 2 = GST)";
+            // 
+            // nudOrderTax
+            // 
+            this.nudOrderTax.Location = new System.Drawing.Point(275, 288);
+            this.nudOrderTax.Name = "nudOrderTax";
+            this.nudOrderTax.Size = new System.Drawing.Size(120, 20);
+            this.nudOrderTax.TabIndex = 13;
+            // 
             // frmPizzaOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nudOrderTax);
+            this.Controls.Add(this.lblOrderTax);
             this.Controls.Add(this.lblTaxAnswer);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblSubtotal);
@@ -171,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudToppings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDrinks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOrderTax)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +212,8 @@
         private System.Windows.Forms.Label lblSubtotal;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblTaxAnswer;
+        private System.Windows.Forms.Label lblOrderTax;
+        private System.Windows.Forms.NumericUpDown nudOrderTax;
     }
 }
 

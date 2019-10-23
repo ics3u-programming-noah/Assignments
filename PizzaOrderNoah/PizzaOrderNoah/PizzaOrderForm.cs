@@ -30,7 +30,7 @@ namespace PizzaOrderNoah
             this.lblTotal.Show();
             this.lblTaxAnswer.Show();
 
-            double pizzasize, toppings, drinks, pizzacost, drinkcost, toppingscost, tax, subtotal, total;
+            double pizzasize, toppings, drinks, pizzacost, drinkcost, toppingscost, tax, subtotal, total, ordertax, ordertaxans;
 
             const double extralarge = 12.99;
             const double large = 9.99;
@@ -49,10 +49,18 @@ namespace PizzaOrderNoah
             const double hsttax = 0.13;
             const double gsttax = 0.05;
 
+            pizzacost = 0;
+
+            toppingscost = 0;
+
+            drinkcost = 0;
+
+            ordertax = 0;
+            
             pizzasize = double.Parse(nudPizzaSize.Text);
             toppings = double.Parse(nudToppings.Text);
             drinks = double.Parse(nudDrinks.Text);
-            tax = double.Parse(nudTax.Text);
+            tax = double.Parse(nudOrderTax.Text);
 
             if (pizzasize == 1)
             {
@@ -67,7 +75,79 @@ namespace PizzaOrderNoah
                 pizzacost = extralarge;
             }
 
-                
+            if (toppings == 0)
+            {
+                toppingscost = notop;
+            }
+            else if (toppings == 1)
+            {
+                toppingscost = onetop;
+            }
+            else if (toppings == 2)
+            {
+                toppingscost = twotop;
+            }
+            else if (toppings == 3)
+            {
+                toppingscost = threetop; 
+            }
+            else if (toppings == 4)
+            {
+                toppingscost = fourtop;
+            }
+            else if (toppings == 5)
+            {
+                toppingscost = fivetop;
+            }
+
+            if (drinks == 0)
+            {
+                drinkcost = nodrink;
+            }
+            else if (drinks == 1)
+            {
+                drinkcost = onedrink;
+            }
+            else if (drinks == 2)
+            {
+                drinkcost = twodrink;
+            }
+            else if (drinks == 3)
+            {
+                drinkcost = threedrink;
+            }
+            else if (drinks == 4)
+            {
+                drinkcost = fourdrink;
+            }
+
+            if (tax == 1)
+            {
+                ordertax = hsttax;
+            }
+            else if (tax == 2)
+            {
+                ordertax = gsttax;
+            }
+
+            subtotal = pizzacost + toppingscost + drinkcost;
+
+            ordertaxans = subtotal * ordertax;
+
+            total = subtotal + ordertaxans;
+
+            lblSubtotal.Text = String.Format("${0:0.0}", subtotal);
+
+            lblTotal.Text = String.Format("${0:0.0}", total);
+
+            lblOrderTax.Text = String.Format("${0:0.0}", ordertaxans);
+
+
+
+
+
+
+
         }
     }
 }
