@@ -1,0 +1,9 @@
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\bin\Debug\PizzaOrderNoah.exe.config
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\bin\Debug\PizzaOrderNoah.exe
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\bin\Debug\PizzaOrderNoah.pdb
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\obj\Debug\PizzaOrderNoah.csprojAssemblyReference.cache
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\obj\Debug\PizzaOrderNoah.frmPizzaOrder.resources
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\obj\Debug\PizzaOrderNoah.Properties.Resources.resources
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\obj\Debug\PizzaOrderNoah.csproj.GenerateResource.cache
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\obj\Debug\PizzaOrderNoah.exe
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\PizzaOrderNoah\PizzaOrderNoah\obj\Debug\PizzaOrderNoah.pdb
