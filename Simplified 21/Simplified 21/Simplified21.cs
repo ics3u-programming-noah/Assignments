@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Simplified_21
 {
-    static class Program
+    static class Simplified21
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace Simplified_21
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmSimplified21());
         }
     }
 }
