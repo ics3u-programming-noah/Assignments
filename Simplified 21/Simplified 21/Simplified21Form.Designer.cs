@@ -39,6 +39,7 @@
             this.lblUserTotal = new System.Windows.Forms.Label();
             this.lblUser3 = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
+            this.lblUser4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnHit
@@ -49,6 +50,7 @@
             this.btnHit.TabIndex = 0;
             this.btnHit.Text = "Hit";
             this.btnHit.UseVisualStyleBackColor = true;
+            this.btnHit.Click += new System.EventHandler(this.BtnHit_Click);
             // 
             // lblDealer1
             // 
@@ -103,6 +105,7 @@
             this.btnStay.TabIndex = 6;
             this.btnStay.Text = "Stay";
             this.btnStay.UseVisualStyleBackColor = true;
+            this.btnStay.Click += new System.EventHandler(this.BtnStay_Click);
             // 
             // lblDealerTotal
             // 
@@ -116,7 +119,7 @@
             // lblUserTotal
             // 
             this.lblUserTotal.AutoSize = true;
-            this.lblUserTotal.Location = new System.Drawing.Point(673, 234);
+            this.lblUserTotal.Location = new System.Drawing.Point(673, 303);
             this.lblUserTotal.Name = "lblUserTotal";
             this.lblUserTotal.Size = new System.Drawing.Size(35, 13);
             this.lblUserTotal.TabIndex = 8;
@@ -141,11 +144,21 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.BtnStart_Click);
             // 
+            // lblUser4
+            // 
+            this.lblUser4.AutoSize = true;
+            this.lblUser4.Location = new System.Drawing.Point(344, 303);
+            this.lblUser4.Name = "lblUser4";
+            this.lblUser4.Size = new System.Drawing.Size(35, 13);
+            this.lblUser4.TabIndex = 11;
+            this.lblUser4.Text = "label1";
+            // 
             // frmSimplified21
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblUser4);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblUser3);
             this.Controls.Add(this.lblUserTotal);
@@ -178,6 +191,7 @@
         private System.Windows.Forms.Label lblUserTotal;
         private System.Windows.Forms.Label lblUser3;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label lblUser4;
     }
 }
 
