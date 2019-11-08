@@ -40,13 +40,16 @@
             this.lblUser3 = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.lblUser4 = new System.Windows.Forms.Label();
+            this.btnHit2 = new System.Windows.Forms.Button();
+            this.lblWin = new System.Windows.Forms.Label();
+            this.lblEnd = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnHit
             // 
-            this.btnHit.Location = new System.Drawing.Point(47, 174);
+            this.btnHit.Location = new System.Drawing.Point(47, 171);
             this.btnHit.Name = "btnHit";
-            this.btnHit.Size = new System.Drawing.Size(107, 46);
+            this.btnHit.Size = new System.Drawing.Size(107, 49);
             this.btnHit.TabIndex = 0;
             this.btnHit.Text = "Hit";
             this.btnHit.UseVisualStyleBackColor = true;
@@ -153,11 +156,41 @@
             this.lblUser4.TabIndex = 11;
             this.lblUser4.Text = "label1";
             // 
+            // btnHit2
+            // 
+            this.btnHit2.Location = new System.Drawing.Point(47, 226);
+            this.btnHit2.Name = "btnHit2";
+            this.btnHit2.Size = new System.Drawing.Size(107, 48);
+            this.btnHit2.TabIndex = 12;
+            this.btnHit2.Text = "Hit";
+            this.btnHit2.UseVisualStyleBackColor = true;
+            this.btnHit2.Click += new System.EventHandler(this.BtnHit2_Click);
+            // 
+            // lblWin
+            // 
+            this.lblWin.AutoSize = true;
+            this.lblWin.Location = new System.Drawing.Point(367, 43);
+            this.lblWin.Name = "lblWin";
+            this.lblWin.Size = new System.Drawing.Size(0, 13);
+            this.lblWin.TabIndex = 13;
+            // 
+            // lblEnd
+            // 
+            this.lblEnd.AutoSize = true;
+            this.lblEnd.Location = new System.Drawing.Point(367, 77);
+            this.lblEnd.Name = "lblEnd";
+            this.lblEnd.Size = new System.Drawing.Size(35, 13);
+            this.lblEnd.TabIndex = 14;
+            this.lblEnd.Text = "label2";
+            // 
             // frmSimplified21
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblEnd);
+            this.Controls.Add(this.lblWin);
+            this.Controls.Add(this.btnHit2);
             this.Controls.Add(this.lblUser4);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblUser3);
@@ -192,6 +225,9 @@
         private System.Windows.Forms.Label lblUser3;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblUser4;
+        private System.Windows.Forms.Button btnHit2;
+        private System.Windows.Forms.Label lblWin;
+        private System.Windows.Forms.Label lblEnd;
     }
 }
 
