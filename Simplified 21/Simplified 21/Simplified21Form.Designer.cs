@@ -47,7 +47,7 @@
             // 
             // btnHit
             // 
-            this.btnHit.Location = new System.Drawing.Point(47, 171);
+            this.btnHit.Location = new System.Drawing.Point(47, 173);
             this.btnHit.Name = "btnHit";
             this.btnHit.Size = new System.Drawing.Size(107, 49);
             this.btnHit.TabIndex = 0;
@@ -158,7 +158,7 @@
             // 
             // btnHit2
             // 
-            this.btnHit2.Location = new System.Drawing.Point(47, 226);
+            this.btnHit2.Location = new System.Drawing.Point(47, 198);
             this.btnHit2.Name = "btnHit2";
             this.btnHit2.Size = new System.Drawing.Size(107, 48);
             this.btnHit2.TabIndex = 12;
@@ -177,9 +177,10 @@
             // lblEnd
             // 
             this.lblEnd.AutoSize = true;
-            this.lblEnd.Location = new System.Drawing.Point(367, 77);
+            this.lblEnd.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnd.Location = new System.Drawing.Point(296, 176);
             this.lblEnd.Name = "lblEnd";
-            this.lblEnd.Size = new System.Drawing.Size(35, 13);
+            this.lblEnd.Size = new System.Drawing.Size(107, 32);
             this.lblEnd.TabIndex = 14;
             this.lblEnd.Text = "label2";
             // 

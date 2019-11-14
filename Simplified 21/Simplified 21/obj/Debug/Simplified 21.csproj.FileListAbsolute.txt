@@ -8,3 +8,12 @@ N:\Classes\Sem1-Fall2019\ICS3U Programming\CNoah (s272205)\Assignments\Simplifie
 N:\Classes\Sem1-Fall2019\ICS3U Programming\CNoah (s272205)\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified 21.csproj.CoreCompileInputs.cache
 N:\Classes\Sem1-Fall2019\ICS3U Programming\CNoah (s272205)\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified 21.exe
 N:\Classes\Sem1-Fall2019\ICS3U Programming\CNoah (s272205)\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified 21.pdb
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\bin\Debug\Simplified 21.exe.config
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\bin\Debug\Simplified 21.exe
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\bin\Debug\Simplified 21.pdb
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified 21.csprojAssemblyReference.cache
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified_21.Properties.Resources.resources
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified_21.frmSimplified21.resources
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified 21.csproj.GenerateResource.cache
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified 21.exe
+C:\Users\noahc\Documents\ICS3U Programming\Assignments\Simplified 21\Simplified 21\obj\Debug\Simplified 21.pdb
