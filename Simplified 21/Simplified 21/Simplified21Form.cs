@@ -91,14 +91,21 @@ namespace Simplified_21
             {
                 this.lblEnd.Show();
                 this.lblEnd.Text = "You Lose!";
+
+                if (userTotal < 21)
+                {
+                    this.lblEnd.Show();
+                    this.lblEnd.Text = "You Win!";
+
+                }
             }
 
-            if (userTotal > 21)
+            if (userTotal >= 22)
             {
 
                     this.lblEnd.Text = "You Lose!";
 
-                if (dealerTotal > 21)
+                if (dealerTotal >= 22)
                 {
                     this.lblEnd.Show();
                     this.lblEnd.Text = "Tie!";
@@ -110,6 +117,30 @@ namespace Simplified_21
             {
                 this.lblEnd.Show();
                 this.lblEnd.Text = "Tie!";
+            }
+
+            if (userTotal == 21)
+            {
+                this.lblEnd.Show();
+                this.lblEnd.Text = "Blackjack! You Win!";
+
+                if(dealerTotal == 21)
+                {
+                    this.lblEnd.Show();
+                    this.lblEnd.Text = "Tie!";
+                }
+            }
+
+            if (dealerTotal == 21)
+            {
+                this.lblEnd.Show();
+                this.lblEnd.Text = "Dealer Blackjack! You lose!";
+
+                if(userTotal == dealerTotal)
+                {
+                    this.lblEnd.Show();
+                    this.lblEnd.Text = "Tie!";
+                }
             }
 
            
@@ -239,9 +270,9 @@ namespace Simplified_21
 
                     this.lblDealerTotal.Text = Convert.ToString(dealerTotal);
 
-                    this.lblEnd.Text = "You Win!";
+                    this.lblEnd.Text = "Blackjack! You Win!";
 
-                    if (dealerTotal == userTotal)
+                    if (dealerTotal == 21)
                     {
                         this.lblEnd.Text = "Tie!";
                     }
@@ -249,6 +280,43 @@ namespace Simplified_21
                 }
 
             }
+            if (userTotal == 21)
+            {
+                this.btnHit.Hide();
+                this.btnHit2.Hide();
+                this.btnStay.Hide();
+                this.lblDealer1.Show();
+                this.lblDealer2.Show();
+                this.lblDealer3.Show();
+                this.lblDealerTotal.Show();
+                this.lblEnd.Show();
+
+                aRandomNumber = randomNumberGenerator.Next(MIN_NUM, MAX_NUM + 1);
+
+                Dcard1 = aRandomNumber;
+                this.lblDealer1.Text = Convert.ToString(Dcard1);
+
+                aRandomNumber = randomNumberGenerator.Next(MIN_NUM, MAX_NUM + 1);
+                Dcard2 = aRandomNumber;
+                this.lblDealer2.Text = Convert.ToString(Dcard2);
+
+                aRandomNumber = randomNumberGenerator.Next(MIN_NUM, MAX_NUM + 1);
+                Dcard3 = aRandomNumber;
+                this.lblDealer3.Text = Convert.ToString(Dcard3);
+
+                dealerTotal = Dcard1 + Dcard2 + Dcard3;
+
+                this.lblDealerTotal.Text = Convert.ToString(dealerTotal);
+
+                this.lblEnd.Text = "Blackjack! You Win!";
+
+                if (dealerTotal == 21)
+                {
+                    this.lblEnd.Text = "Tie!";
+                }
+
+            }
+
         }
 
         private void BtnStay_Click(object sender, EventArgs e)
@@ -298,7 +366,13 @@ namespace Simplified_21
             if (dealerTotal == 21)
             {
                 this.lblEnd.Show();
-                this.lblEnd.Text = "You Lose!";
+                this.lblEnd.Text = "Dealer Blackjack! You Lose!";
+
+                if(userTotal == 21)
+                {
+                    this.lblEnd.Show();
+                    this.lblEnd.Text = "Tie!";
+                }
             }
 
             if (dealerTotal == userTotal)
@@ -362,7 +436,7 @@ namespace Simplified_21
 
                 this.lblDealerTotal.Text = Convert.ToString(dealerTotal);
 
-                this.lblEnd.Text = "You Win!";
+                this.lblEnd.Text = "Blackjack! You Win!";
 
                 if (dealerTotal == userTotal)
                 {
@@ -407,6 +481,46 @@ namespace Simplified_21
             {
                 this.lblEnd.Text = "Tie!";
             }
+
+            if (dealerTotal == 21)
+            {
+
+                this.btnHit.Hide();
+                this.btnHit2.Hide();
+                this.btnStay.Hide();
+                this.lblDealer1.Show();
+                this.lblDealer2.Show();
+                this.lblDealer3.Show();
+                this.lblDealerTotal.Show();
+                this.lblEnd.Show();
+
+                aRandomNumber = randomNumberGenerator.Next(MIN_NUM, MAX_NUM + 1);
+
+                Dcard1 = aRandomNumber;
+                this.lblDealer1.Text = Convert.ToString(Dcard1);
+
+                aRandomNumber = randomNumberGenerator.Next(MIN_NUM, MAX_NUM + 1);
+                Dcard2 = aRandomNumber;
+                this.lblDealer2.Text = Convert.ToString(Dcard2);
+
+                aRandomNumber = randomNumberGenerator.Next(MIN_NUM, MAX_NUM + 1);
+                Dcard3 = aRandomNumber;
+                this.lblDealer3.Text = Convert.ToString(Dcard3);
+
+                dealerTotal = Dcard1 + Dcard2 + Dcard3;
+
+                this.lblDealerTotal.Text = Convert.ToString(dealerTotal);
+
+                this.lblEnd.Text = "Dealer Blackjack! You Lose!";
+
+                if (userTotal == 21)
+                {
+                    this.lblEnd.Text = "Tie!";
+                }
+            }
+
+            
+
         }
 
             
